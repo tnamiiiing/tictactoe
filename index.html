@@ -8,7 +8,7 @@
   
   <body>
     <div class="container">
-      <h class="title">最強の三目並べAI</h>
+      <h class="title">絶対に勝てない三目並べ</h>
       <div class="grid">
         <div class="cell">
           <span id="pos-0-x" class="batu hidden">X</span>
@@ -231,7 +231,7 @@ class GameManager:
         update_cells(self.board.state)
 
         if self.board.is_win(1):
-            display_message("AIの勝ち😞")
+            display_message("あなたの負けです。😞なんで負けたか明日までに考えといてください")
             self.game_running = False
             Element("reset-button").remove_class("hidden")  
             return 
